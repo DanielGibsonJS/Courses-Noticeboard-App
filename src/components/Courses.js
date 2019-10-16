@@ -20,7 +20,7 @@ class Courses extends Component {
     this.setState({isLoading: true})
     /* Fetch the list of courses from the API using axios */    
     axios
-      .get('https://rest-api-project-9.herokuapp.com/api/courses/')
+      .get('https://database-courses-noticeboard.herokuapp.com/api/courses/')
       .then(res => {
         this.setState({
           courses: res.data
