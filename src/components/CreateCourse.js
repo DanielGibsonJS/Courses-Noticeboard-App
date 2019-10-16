@@ -29,7 +29,7 @@ class CreateCourse extends Component {
 
     axios({
       method: 'post',
-      url: 'https://rest-api-project-9.herokuapp.com/api/courses',
+      url: 'https://database-courses-noticeboard.herokuapp.com/api/courses',
       auth: {
         username: window.localStorage.getItem("EmailAddress"),
         password: window.localStorage.getItem("Password"),
