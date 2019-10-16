@@ -34,7 +34,7 @@ class App extends Component {
 
   /* Called from UserSignIn component - handles the sign-in process */
   handleSignIn(username, password, props) {
-    axios.get("https://rest-api-project-9.herokuapp.com/api/users", {
+    axios.get("https://database-courses-noticeboard.herokuapp.com/api/users", {
       auth: {
         username: username,
         password: password,
