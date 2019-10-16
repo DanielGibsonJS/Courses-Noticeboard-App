@@ -39,7 +39,7 @@ class UserSignUp extends Component {
 
     axios({
       method: 'post',
-      url: 'https://rest-api-project-9.herokuapp.com/api/users/',
+      url: 'https://database-courses-noticeboard.herokuapp.com/api/users/',
       data: {
         firstName,
         lastName,
