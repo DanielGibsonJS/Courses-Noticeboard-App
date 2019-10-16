@@ -24,7 +24,7 @@ class CourseDetail extends Component {
 
     /* Fetch the requested course from the API using axios */
     axios
-      .get(`https://rest-api-project-9.herokuapp.com/api/courses/${id}`)
+      .get(`https://database-courses-noticeboard.herokuapp.com/api/courses/${id}`)
       .then(res => {
         /* If successful then save course and user data to state */
         this.setState({
@@ -48,7 +48,7 @@ class CourseDetail extends Component {
     const { match: { params }, history } = this.props;
 
     axios
-      .delete(`https://rest-api-project-9.herokuapp.com/api/courses/${params.id}`, {
+      .delete(`https://database-courses-noticeboard.herokuapp.com/api/courses/${params.id}`, {
         auth: {
           username: window.localStorage.getItem("EmailAddress"),
           password: window.localStorage.getItem("Password"),
